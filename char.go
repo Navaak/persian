@@ -62,6 +62,7 @@ func F2E(s string) string {
 		}
 		part, ok := f2eData[ch]
 		if !ok {
+			result += F2ENum(ch)
 			continue
 		}
 		switch state {
